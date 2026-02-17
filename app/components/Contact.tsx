@@ -6,6 +6,7 @@ import { HiOutlineMail, HiOutlineLocationMarker, HiOutlinePhone } from "react-ic
 import { IoSendSharp } from "react-icons/io5";
 import Link from "next/link";
 import { useState, FormEvent } from "react";
+import { personalInfo } from "@/utils/common";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,14 +30,14 @@ const Contact = () => {
     {
       icon: HiOutlineMail,
       label: "Email",
-      value: "mazaharul@example.com",
-      href: "mailto:mazaharul@example.com",
+      value: personalInfo.email,
+      href: `mailto:${personalInfo.email}`,
     },
     {
       icon: HiOutlinePhone,
       label: "Phone",
-      value: "+880 1XXX-XXXXXX",
-      href: "tel:+8801XXXXXXXXX",
+      value: personalInfo.phone,
+      href: `tel:${personalInfo.phone}`,
     },
     {
       icon: HiOutlineLocationMarker,
@@ -209,7 +210,7 @@ const Contact = () => {
               disabled={sending}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
-              className="group inline-flex items-center gap-2.5 rounded-lg
+              className="group cursor-pointer inline-flex items-center gap-2.5 rounded-lg
                          bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3
                          text-sm font-semibold text-slate-900 transition-shadow
                          hover:shadow-[0_0_25px_rgba(34,211,238,0.25)]

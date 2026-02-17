@@ -54,7 +54,6 @@ const tools: Tool[] = [
   { name: "Docker", icon: FaDocker, color: "text-blue-400", category: "Cloud & DevOps" },
   { name: "Nginx", icon: SiNginx, color: "text-green-500", category: "Cloud & DevOps" },
   { name: "Vercel", icon: SiVercel, color: "text-white", category: "Cloud & DevOps" },
-  { name: "Netlify", icon: SiNetlify, color: "text-teal-400", category: "Cloud & DevOps" },
   { name: "Render", icon: SiRender, color: "text-emerald-400", category: "Cloud & DevOps" },
   { name: "Cloudflare", icon: SiCloudflare, color: "text-orange-400", category: "Cloud & DevOps" },
   { name: "GitHub Actions", icon: SiGithubactions, color: "text-blue-300", category: "Cloud & DevOps" },
@@ -68,7 +67,6 @@ const tools: Tool[] = [
   // ── API & Testing ──
   { name: "Postman", icon: SiPostman, color: "text-orange-400", category: "API & Testing" },
   { name: "Swagger", icon: SiSwagger, color: "text-green-400", category: "API & Testing" },
-  { name: "Insomnia", icon: SiInsomnia, color: "text-purple-400", category: "API & Testing" },
   { name: "Jest", icon: SiJest, color: "text-red-400", category: "API & Testing" },
   { name: "GraphQL", icon: SiGraphql, color: "text-pink-500", category: "API & Testing" },
 
@@ -78,9 +76,6 @@ const tools: Tool[] = [
 
   // ── Package Managers ──
   { name: "npm", icon: FaNpm, color: "text-red-500", category: "Package Managers" },
-  { name: "Yarn", icon: SiYarn, color: "text-blue-400", category: "Package Managers" },
-  { name: "pnpm", icon: SiPnpm, color: "text-yellow-500", category: "Package Managers" },
-  { name: "Bun", icon: SiBun, color: "text-amber-300", category: "Package Managers" },
 
   // ── Build & Lint ──
   { name: "Vite", icon: SiVite, color: "text-purple-400", category: "Build Tools" },
@@ -89,10 +84,8 @@ const tools: Tool[] = [
   { name: "Prettier", icon: SiPrettier, color: "text-pink-400", category: "Build Tools" },
 
   // ── Editors & Productivity ──
-  { name: "VS Code", icon: VscTerminalBash, color: "text-blue-500", category: "Productivity" },
   { name: "Bash", icon: VscTerminalBash, color: "text-green-400", category: "Productivity" },
   { name: "Linux", icon: FaLinux, color: "text-yellow-400", category: "Productivity" },
-  { name: "Figma", icon: FaFigma, color: "text-pink-400", category: "Productivity" },
   { name: "Notion", icon: SiNotion, color: "text-slate-200", category: "Productivity" },
   { name: "Slack", icon: FaSlack, color: "text-purple-400", category: "Productivity" },
   { name: "Trello", icon: FaTrello, color: "text-blue-400", category: "Productivity" },
@@ -182,7 +175,7 @@ const Tools = () => {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`rounded-full border px-3.5 py-1.5 text-[11px] font-medium
+              className={`rounded-full cursor-pointer border px-3.5 py-1.5 text-[11px] font-medium
                          transition-all duration-300 ${
                            activeCategory === cat
                              ? "border-cyan-400/30 bg-cyan-400/10 text-cyan-300"

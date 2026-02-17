@@ -5,15 +5,16 @@ export const personalInfo = {
   linkdine: "https://www.linkedin.com/in/mazaharul-islam-0948a333a",
   facebook: "https://www.facebook.com/themazaharul",
   github: "https://github.com/devmazaharul",
+  phone:"01886575932"
 };
 
 export const source = {
   name: "mazaharul islam",
-  title: "Frontend-Oriented Full Stack Engineer",
-  contactLink: "https://www.linkedin.com/in/mazaharul-islam-0948a333a/",
-  description:
-    "I’m a full-stack web developer passionate about building scalable, modern applications using Next.js, Node.js, Prisma, and PostgreSQL — from SaaS platforms to custom APIs and dashboards.",
-  role: "Full stack web Dev.",
+   contactLink: "https://www.linkedin.com/in/mazaharul-islam-0948a333a/",
+ title: "Full Stack Software Engineer",
+role: "Software Engineer",
+description:
+  "I am a Software Engineer dedicated to building scalable, high-performance distributed systems. With a strong foundation in Data Structures & Algorithms, I engineer robust backend architectures and intuitive frontend interfaces using Next.js, PostgreSQL, and Docker.",
   experience: "4y+",
   current: "Remote job",
   contactInfo: {
@@ -50,59 +51,62 @@ export const source = {
     { id: 9, title: "CI/CD (Basic)" },
   ],
   projects: [
-    {
-      name: "mazaAir — Smart Flight Search & Fare Comparison Platform",
-      description:
-        "mazaAir is a full-stack flight search application powered by real-time airline APIs, featuring advanced filtering, accurate time handling, and scalable backend architecture.",
-      liveLink: "https://air.themaza.shop/",
-      githubLink: "https://github.com/devmazaharul/airlines",
-    },
-    {
-      name: "FlexIn – Ecommerce Platform",
-      description:
-        "A complete product-based online store with cart, dynamic categories, and Cloudinary image upload. Built using Next.js, PostgreSQL, Zustand, Tailwind CSS.",
-      liveLink: "https://themaza.shop",
-      githubLink: "https://github.com/devmazaharul/flexin",
-    },
-    {
-      name: "mazaPay - Online Payment Gateway",
-      description:
-        "A secure online payment gateway with user authentication, transaction history, and real-time notifications. Built using Next.js, Node.js, PostgreSQL, and Express.js.",
-      liveLink: "https://pay.mazaharul.site",
-      githubLink: "https://github.com/devmazaharul/paywithmaza",
-    },
-    {
-      name: "Glow Niba – Skincare eCommerce",
-      description:
-        "A complete product-based online store with seller basket, cart, dynamic categories, and Cloudinary image upload. Built using Next.js, MongoDB, Zustand, and Express.",
-      liveLink: "https://glowniba.vercel.app",
-      githubLink: "https://github.com/devmazaharul/glowniba",
-    },
-    {
-      name: "Easy hisab - Manage store",
-      description:
-        "A user-friendly store management system with product tracking, inventory control, admin dashboard, and seamless order handling — built for small businesses.",
-      liveLink: "https://bdeasy-drab.vercel.app",
-      githubLink: "https://github.com/devmazaharul/Hisab_client",
-    },
-    {
-      name: "Study - Fronted design by next js",
-      description:
-        "A sleek study platform frontend built with Next.js, featuring responsive design, clean UI components, and optimized performance for educational use.",
-      liveLink: "https://bdteach.vercel.app/",
-      githubLink: "https://github.com/devmazaharul/teaching",
-    },
-    {
-      name: "Awesome portfolio",
-      description:
-        "A modern and responsive developer portfolio built with Next.js, showcasing projects, skills, and a clean UI for personal branding.",
-      liveLink: "https://mazaportfolio1.vercel.app/",
-      githubLink: "https://github.com/devmazaharul/dorbes_portfolio",
-    },
-  ],
+  {
+    name: "mazaAir — Global Flight Aggregation Engine",
+    description:
+      "Engineered a high-performance flight search architecture integrating real-time GDS APIs. Features include complex route filtering, multi-city search algorithms, and a robust backend designed to handle high-concurrency requests.",
+    liveLink: "https://air.themaza.shop/",
+    githubLink: "https://github.com/devmazaharul/airlines",
+    tech: ["Next.js", "PostgreSQL", "Prisma", "Duffel API"],
+  },
+  {
+    name: "FlexIn — Scalable E-Commerce Architecture",
+    description:
+      "A full-featured digital marketplace built for scalability. Implemented optimized relational database schemas (PostgreSQL) for product indexing and utilized Zustand for efficient global state management to ensure a seamless shopping experience.",
+    liveLink: "https://themaza.shop",
+    githubLink: "https://github.com/devmazaharul/flexin",
+    tech: ["Next.js", "TypeScript", "PostgreSQL", "Zustand"],
+  },
+  {
+    name: "mazaPay — Secure FinTech Transaction System",
+    description:
+      "Designed a secure financial processing unit focusing on transaction atomicity and data integrity. Implemented multi-layer authentication (JWT), real-time notifications, and secure API endpoints for handling sensitive user data.",
+    liveLink: "https://pay.mazaharul.site",
+    githubLink: "https://github.com/devmazaharul/paywithmaza",
+    tech: ["Node.js", "Express", "PostgreSQL", "Security"],
+  },
+  {
+    name: "Glow Niba — Multi-Vendor Beauty Marketplace",
+    description:
+      "A specialized multi-vendor platform featuring complex cart logic and seller-specific basket management. Leveraged MongoDB’s flexible schema for dynamic product attributes and integrated Cloudinary for optimized media delivery.",
+    liveLink: "https://glowniba.vercel.app",
+    githubLink: "https://github.com/devmazaharul/glowniba",
+    tech: ["Next.js", "MongoDB", "Mongoose", "Cloudinary"],
+  },
+  {
+    name: "Easy Hisab — Business Inventory & POS Solution",
+    description:
+      "An enterprise-grade inventory management system tailored for small businesses. Features a comprehensive admin dashboard for real-time stock tracking, sales analytics, and automated order processing workflows.",
+    liveLink: "https://bdeasy-drab.vercel.app",
+    githubLink: "https://github.com/devmazaharul/Hisab_client",
+    tech: ["React.js", "Node.js", "REST API", "Dashboard"],
+  },
+  {
+    name: "BD Teach — Modern EdTech Interface",
+    description:
+      "A high-fidelity educational platform interface focusing on Core Web Vitals and accessibility. Built with reusable component architecture to ensure consistent design patterns and responsive layouts across all devices.",
+    liveLink: "https://bdteach.vercel.app/",
+    githubLink: "https://github.com/devmazaharul/teaching",
+    tech: ["Next.js", "Tailwind CSS", "UI/UX", "Responsive"],
+  },
+  {
+    name: "Dev Portfolio — High-Performance Personal Brand",
+    description:
+      "A showcase of engineering excellence built with Next.js 14. prioritized SEO optimization, smooth framer-motion animations, and a clean, modular code structure to demonstrate modern web development best practices.",
+    liveLink: "https://mazaportfolio1.vercel.app/",
+    githubLink: "https://github.com/devmazaharul/dorbes_portfolio",
+    tech: ["Next.js", "Framer Motion", "SEO", "React Icons"],
+  },
+],
 };
 
-export const colorShem = Object.freeze({
-  main_color: "bg-gray-700",
-  text_color: "text-gray-600",
-});

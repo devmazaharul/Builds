@@ -171,7 +171,7 @@ const Projects = () => {
               onClick={() => setShowAll(!showAll)}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
-              className="group inline-flex items-center gap-2 rounded-lg border border-white/[0.06]
+              className="group inline-flex cursor-pointer items-center gap-2 rounded-lg border border-white/[0.06]
                          bg-white/[0.02] px-5 py-2.5 text-xs font-medium text-slate-400
                          backdrop-blur-sm transition-colors duration-300
                          hover:border-cyan-400/20 hover:text-slate-200"

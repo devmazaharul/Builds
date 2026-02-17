@@ -121,7 +121,7 @@ const FaqCard = ({
       {/* Question */}
       <button
         onClick={onToggle}
-        className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
+        className="flex cursor-pointer w-full items-center justify-between gap-4 px-5 py-4 text-left"
       >
         <div className="flex items-center gap-3 min-w-0">
           {/* Number */}
@@ -274,7 +274,7 @@ const Faq = () => {
                 setActiveCategory(cat);
                 setOpenIndex(null);
               }}
-              className={`rounded-full border px-3.5 py-1.5 text-[11px] font-medium
+              className={`rounded-full cursor-pointer border px-3.5 py-1.5 text-[11px] font-medium
                          transition-all duration-300 ${
                            activeCategory === cat
                              ? "border-cyan-400/30 bg-cyan-400/10 text-cyan-300"

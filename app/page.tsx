@@ -6,6 +6,9 @@ import Contact from './components/Contact'
 import Projects from './components/Project'
 import Tools from './components/Technology'
 import Faq from './components/Faq'
+import Footer from './components/Footer'
+import Services from './components/Offer'
+import Education from './components/Education'
 
 export default function page() {
   return (
@@ -14,9 +17,12 @@ export default function page() {
       {/* <About/> */}
       <Skills/>
       <Projects/>
+      <Services/>
        <Tools/>
+       <Education/>
        <Faq/>
          <Contact/>
+         <Footer/>
     </div>
   )
 }
