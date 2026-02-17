@@ -175,7 +175,7 @@ const MobileProfileSection = () => (
     <ProfileImage className="h-32 w-32 sm:h-40 sm:w-40" />
 
     {/* Mini info row */}
-    <div className="flex flex-wrap items-center justify-center gap-3">
+    <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
       {[
         { label: source.experience, sub: "Exp." },
         { label: "25+", sub: "Projects" },
