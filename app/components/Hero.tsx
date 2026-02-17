@@ -142,7 +142,7 @@ const InfoCard = () => {
                          border-white/[0.08] bg-white/[0.03]"
             >
               <Image
-                src="https://www.mazaharul.site/_next/image?url=%2FImage_mw970imw970imw97.png&w=256&q=75"
+                src="/IMG_6403.PNG"
                 height={56}
                 width={56}
                 alt="Mazaharul Islam"
