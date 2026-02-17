@@ -52,10 +52,10 @@ description:
   ],
   projects: [
   {
-    name: "mazaAir — Global Flight Aggregation Engine",
+    name: "flybismillah — Global Flight Aggregation Engine",
     description:
       "Engineered a high-performance flight search architecture integrating real-time GDS APIs. Features include complex route filtering, multi-city search algorithms, and a robust backend designed to handle high-concurrency requests.",
-    liveLink: "https://air.themaza.shop/",
+    liveLink: "https://flybismillah.com/",
     githubLink: "https://github.com/devmazaharul/airlines",
     tech: ["Next.js", "PostgreSQL", "Prisma", "Duffel API"],
   },

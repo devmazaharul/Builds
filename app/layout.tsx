@@ -181,12 +181,7 @@ export const metadata: Metadata = {
     },
   },
 
-  // ── Verification ──
-  verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || "your-google-verification-code",
-    // yandex: "your-yandex-code",
-    // yahoo: "your-yahoo-code",
-  },
+
 
   // ── Other ──
   referrer: "origin-when-cross-origin",
@@ -233,11 +228,11 @@ const personSchema = {
   alumniOf: [
     {
       "@type": "EducationalOrganization",
-      name: "Rupdia Smrity College",
+      name: "Rupdia Shahid Smrity College",
     },
     {
       "@type": "EducationalOrganization",
-      name: "Rupdia High School",
+      name: "Rupdia Welfare Academy",
     },
   ],
   sameAs: [

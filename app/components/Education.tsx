@@ -20,7 +20,7 @@ type Education = {
 const educationData: Education[] = [
     {
         degree: 'Higher Secondary Certificate (HSC)',
-        institution: 'Rupdia Smrity College',
+        institution: 'Rupdia Shahid Smrity College',
         year: '2023',
         gpa: '4.90',
         highlight: true,
@@ -28,7 +28,7 @@ const educationData: Education[] = [
     },
     {
         degree: 'Secondary School Certificate (SSC)',
-        institution: 'Rupdia High School',
+        institution: 'Rupdia Welfare Academy',
         year: '2021',
         gpa: '4.42',
         achievements: ['Science Group', 'Strong Academic Record'],
