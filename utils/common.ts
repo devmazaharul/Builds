@@ -5,7 +5,8 @@ export const personalInfo = {
   linkdine: "https://www.linkedin.com/in/mazaharul-islam-0948a333a",
   facebook: "https://www.facebook.com/themazaharul",
   github: "https://github.com/devmazaharul",
-  phone:"01886575932"
+  phone:"01886575932",
+  whatapps:"https://wa.me/8801886575932?text=Hi%2C%20I%20want%20to%20build%20a%20website"
 };
 
 export const source = {

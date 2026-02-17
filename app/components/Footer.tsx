@@ -145,9 +145,9 @@ const Footer = () => {
           <div className="lg:col-span-5">
             {/* Logo / Name */}
             <Link href="#home" className="inline-block group">
-              <h3 className="text-xl font-bold text-slate-100 tracking-tight">
+              <h3 className="text-xl capitalize font-bold text-slate-100 tracking-tight">
                 <span
-                  className="bg-gradient-to-r from-cyan-400 to-purple-400
+                  className="bg-gradient-to-r  from-cyan-400 to-purple-400
                              bg-clip-text text-transparent"
                 >
                   {source.name.split(" ")[0]}
