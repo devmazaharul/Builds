@@ -15,6 +15,7 @@ import {
   FiHeart,
   FiArrowUp,
 } from "react-icons/fi";
+import Image from "next/image";
 
 /* ───────────────────────── Design Tokens ────────────────────────── */
 const surface = {
@@ -144,19 +145,22 @@ const Footer = () => {
           {/* ── Column 1: Brand ── */}
           <div className="lg:col-span-5">
             {/* Logo / Name */}
-            <Link href="#home" className="inline-block group">
-              <h3 className="text-xl capitalize font-bold text-slate-100 tracking-tight">
+            <Link href="#home" className="gap-2 group flex">
+            <div>
+              <Image src={"/binary.png"} alt="image" width={200} height={300} className="w-6 h-6 object-contain"/>
+            </div>
+              <i className="text-xl capitalize font-bold text-slate-100 tracking-tight">
                 <span
                   className="bg-gradient-to-r  from-cyan-400 to-purple-400
                              bg-clip-text text-transparent"
                 >
-                  {source.name.split(" ")[0]}
+                  Maza
                 </span>
                 <span className="text-slate-300">
                   {" "}
-                  {source.name.split(" ").slice(1).join(" ")}
+                 IT
                 </span>
-              </h3>
+              </i>
             </Link>
 
             {/* Title */}
