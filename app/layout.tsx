@@ -31,7 +31,9 @@ export const viewport: Viewport = {
 // ── Metadata ──
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-
+  icons: {
+    icon: "/binary.png",
+  },
   title: {
     default:
       "Mazaharul Islam — Full Stack Developer | Next.js, React, Node.js Expert from Bangladesh",
@@ -133,7 +135,7 @@ export const metadata: Metadata = {
         type: "image/png",
       },
       {
-        url: "/oseo.jpg",
+        url: "/seo.jpg",
         width: 600,
         height: 600,
         alt: "Mazaharul Islam — Developer",
