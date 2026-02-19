@@ -142,62 +142,55 @@ const Footer = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6 }}
         >
-          {/* ── Column 1: Brand ── */}
-          <div className="lg:col-span-5">
-            {/* Logo / Name */}
-            <Link href="#home" className="gap-2 group flex">
-            <div>
-              <Image src={"/binary.png"} alt="image" width={200} height={300} className="w-6 h-6 object-contain"/>
-            </div>
-              <i className="text-xl capitalize font-bold text-slate-100 tracking-tight">
-                <span
-                  className="bg-gradient-to-r  from-cyan-400 to-purple-400
-                             bg-clip-text text-transparent"
-                >
-                  MazaSoft
-                </span>
-                
-              </i>
-            </Link>
+{/* ── Column 1: Brand ── */}
+<div className="lg:col-span-5">
+  
+  {/* Logo / Name */}
+  <Link href="#home" className="flex items-center gap-2 group">
+    <Image 
+      src="/binary.png" 
+      alt="MazaSoft Logo" 
+      width={24} 
+      height={24} 
+      className="object-contain" 
+    />
+    <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent capitalize tracking-tight">
+      MazaSoft
+    </span>
+  </Link>
 
-            {/* Title */}
-            <p className="mt-1 text-xs uppercase tracking-[0.2em] text-cyan-400/50 font-medium">
-              {source.title}
-            </p>
+  {/* Title */}
+  <p className="mt-1 text-xs uppercase tracking-[0.2em] text-cyan-400/50 font-medium">
+    {source.title}
+  </p>
 
-            {/* Description */}
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-500">
-              {source.description.length > 160
-                ? source.description.slice(0, 160) + "..."
-                : source.description}
-            </p>
+  {/* Description */}
+  <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-500 line-clamp-3">
+    {source.description}
+  </p>
 
-            {/* Status */}
-            <div className="mt-5">
-              <StatusBadge />
-            </div>
+  {/* Status */}
+  <div className="mt-5">
+    <StatusBadge />
+  </div>
 
-            {/* Social Icons */}
-            <div className="mt-6 flex items-center gap-2">
-              {socialLinks.map((social) => (
-                <Link
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                >
-                  <motion.span
-                    whileHover={{ y: -2 }}
-                    className={surface.socialIcon}
-                  >
-                    <social.icon className="h-4 w-4" />
-                  </motion.span>
-                </Link>
-              ))}
-            </div>
-          </div>
-
+  {/* Social Icons */}
+  <div className="mt-6 flex items-center gap-2">
+    {socialLinks.map((social) => (
+      <Link
+        key={social.label}
+        href={social.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={social.label}
+        className={`${surface.socialIcon} hover:-translate-y-1 transition-transform duration-200 ease-in-out`}
+      >
+        <social.icon className="h-4 w-4" />
+      </Link>
+    ))}
+  </div>
+  
+</div>
           {/* ── Column 2: Quick Links ── */}
           <div className="lg:col-span-3">
             <div className="flex items-center gap-2 mb-5">

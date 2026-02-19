@@ -52,6 +52,15 @@ description:
     { id: 9, title: "CI/CD (Basic)" },
   ],
   projects: [
+    {
+  name: "VoterFinder — Smart Serial & Center Search Platform",
+  description:
+    "Designed and deployed a responsive voter serial lookup platform allowing users to quickly search voter details and polling center information. Focused on performance optimization, structured API design, and secure data handling.",
+  liveLink: "https://voterserial.vercel.app",
+  githubLink: "https://github.com/devmazaharul/voterslip",
+  tech: ["Next.js", "MongoDB", "API Integration"],
+}
+,
   {
     name: "flybismillah — Global Flight Aggregation Engine",
     description:
