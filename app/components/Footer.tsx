@@ -154,12 +154,9 @@ const Footer = () => {
                   className="bg-gradient-to-r  from-cyan-400 to-purple-400
                              bg-clip-text text-transparent"
                 >
-                  Maza
+                  MazaSoft
                 </span>
-                <span className="text-slate-300">
-                  {" "}
-                 IT
-                </span>
+                
               </i>
             </Link>
 
